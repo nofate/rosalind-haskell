@@ -15,4 +15,4 @@ solve xs = reverse . map (complement) $ xs
 
 main = do
   xs <- getLine
-  putStrLn (solve xs)
+  putStrLn (showdetails $ solve xs)

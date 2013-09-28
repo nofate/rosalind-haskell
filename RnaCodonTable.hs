@@ -1,8 +1,8 @@
 module RnaCodonTable (
-	getProtein
+	getProtein, getProteinMass
 	) where
 
-
+getProtein :: String -> String
 getProtein "UUU" = "F"  
 getProtein "UUC" = "F"  
 getProtein "UUA" = "L"  
@@ -71,3 +71,26 @@ getProtein "GGC" = "G"
 getProtein "GGA" = "G" 
 getProtein "GGG" = "G"   
 getProtein x = ""
+
+
+getProteinMass :: String -> Double
+getProteinMass "A" = 71.03711
+getProteinMass "C" = 103.00919
+getProteinMass "D" = 115.02694
+getProteinMass "E" = 129.04259
+getProteinMass "F" = 147.06841
+getProteinMass "G" = 57.02146
+getProteinMass "H" = 137.05891
+getProteinMass "I" = 113.08406
+getProteinMass "K" = 128.09496
+getProteinMass "L" = 113.08406
+getProteinMass "M" = 131.04049
+getProteinMass "N" = 114.04293
+getProteinMass "P" = 97.05276
+getProteinMass "Q" = 128.05858
+getProteinMass "R" = 156.10111
+getProteinMass "S" = 87.03203
+getProteinMass "T" = 101.04768
+getProteinMass "V" = 99.06841
+getProteinMass "W" = 186.07931
+getProteinMass "Y" = 163.06333 
